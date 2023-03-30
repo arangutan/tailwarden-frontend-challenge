@@ -22,6 +22,8 @@ There you can find the Card and the Dropdown Component, I don't generate any sto
 
 ## Build
 
+Dev Update: Nx is having an error with rollup he is not finding the package when try to build `@nrwl/rollup:rollup`. I will update the build task when I found the solution.
+
 Run `yarn build` for build the page.
 
 ## Understand this workspace
