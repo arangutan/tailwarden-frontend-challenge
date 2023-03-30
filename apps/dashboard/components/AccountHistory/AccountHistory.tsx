@@ -72,7 +72,6 @@ const AccountHistory = ({ accountId }: AccountHistoryProps) => {
     // eslint-disable-next-line
     const y = cy + radius * Math.sin(-midAngle * RADIAN);
 
-    console.log(data[index]);
     return (
       <text
         x={x}

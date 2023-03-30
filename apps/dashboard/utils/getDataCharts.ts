@@ -25,9 +25,7 @@ const getValuesAccountHistory = (groupData: AccountHistoryGroupType[]) => {
 
 const getBarchartData = (dataAccountHistory: AccountHistoryType[]) => {
   return dataAccountHistory.map((dataAccountHistoryElem) => {
-    const groupData = getValuesAccountHistory([
-      ...dataAccountHistoryElem.groups,
-    ]);
+    const groupData = getValuesAccountHistory(dataAccountHistoryElem.groups);
 
     return {
       date: monthNames[new Date(dataAccountHistoryElem.date).getMonth()],
