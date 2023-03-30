@@ -16,15 +16,17 @@ const options = [
 
 export const primary = () => {
   return (
-    <Dropdown
-      label="Dropdown Test"
-      onChange={(selected) => {
-        console.log(selected);
-      }}
-    >
-      {options.map(({ value, label }) => {
-        return <Option value={value}>{label}</Option>;
-      })}
-    </Dropdown>
+    <div style={{ maxWidth: 500, backgroundColor: '#313131' }}>
+      <Dropdown
+        label="Dropdown Test"
+        onChange={(selected) => {
+          console.log(selected);
+        }}
+      >
+        {options.map(({ value, label }) => {
+          return <Option value={value}>{label}</Option>;
+        })}
+      </Dropdown>
+    </div>
   );
 };

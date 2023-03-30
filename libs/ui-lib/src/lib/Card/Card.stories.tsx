@@ -7,18 +7,39 @@ export default {
 };
 
 export const primary = () => {
-  return <Card type="alarms" value="30" />;
+  return (
+    <div style={{ maxWidth: 250 }}>
+      <Card type="servers" value="120" />
+    </div>
+  );
 };
 
 export const alarm = () => {
-  return <Card type="alarms" value="12" />;
+  return (
+    <div style={{ maxWidth: 250 }}>
+      <Card type="alarms" value="30" />
+    </div>
+  );
 };
+
 export const bill = () => {
-  return <Card type="bill" value=" $ 30" />;
+  return (
+    <div style={{ maxWidth: 250 }}>
+      <Card type="bill" value=" $ 30" />
+    </div>
+  );
 };
 export const regions = () => {
-  return <Card type="regions" value="21" />;
+  return (
+    <div style={{ maxWidth: 250 }}>
+      <Card type="regions" value="21" />
+    </div>
+  );
 };
 export const servers = () => {
-  return <Card type="servers" value="120" />;
+  return (
+    <div style={{ maxWidth: 250 }}>
+      <Card type="servers" value="120" />
+    </div>
+  );
 };
