@@ -4,7 +4,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "nx run dashboard:serve",
-    "storybook": "nx storybook ui-lib"
+    "storybook": "nx storybook ui-lib",
+    "build":"nx build dashboard"
   },
   "private": true,
   "dependencies": {

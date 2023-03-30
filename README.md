@@ -20,6 +20,10 @@ Run `yarn storybook` for a storybook server. Navigate to http://localhost:4400/.
 
 There you can find the Card and the Dropdown Component, I don't generate any storybook story for the data visualizator, if you would like to try it [rechart](https://recharts.org/en-US/examples)
 
+## Build
+
+Run `yarn build` for build the page.
+
 ## Understand this workspace
 
 Run `nx graph` to see a diagram of the dependencies of the projects.
