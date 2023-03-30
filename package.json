@@ -5,11 +5,12 @@
   "scripts": {
     "dev": "nx run dashboard:serve",
     "storybook": "nx storybook ui-lib",
-    "build":"nx build dashboard"
+    "build": "nx build dashboard"
   },
   "private": true,
   "dependencies": {
     "@nrwl/next": "15.8.9",
+    "@nrwl/rollup": "^15.8.9",
     "@tanstack/react-query": "^4.28.0",
     "next": "13.1.1",
     "react": "18.2.0",
