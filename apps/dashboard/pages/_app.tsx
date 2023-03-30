@@ -1,16 +1,32 @@
 import { AppProps } from 'next/app';
-import Head from 'next/head';
-import './styles.css';
+import { useState } from 'react';
+import {
+  QueryClientProvider,
+  QueryClient,
+  Hydrate,
+} from '@tanstack/react-query';
+
+import './style.css';
 
 function CustomApp({ Component, pageProps }: AppProps) {
+  const [queryClient] = useState(
+    () =>
+      new QueryClient({
+        defaultOptions: {
+          queries: {
+            staleTime: 1000 * 20,
+          },
+        },
+      })
+  );
+
   return (
     <>
-      <Head>
-        <title>Welcome to dashboard!</title>
-      </Head>
-      <main className="app">
-        <Component {...pageProps} />
-      </main>
+      <QueryClientProvider client={queryClient}>
+        <Hydrate state={pageProps.dehydratedState}>
+          <Component {...pageProps} />
+        </Hydrate>
+      </QueryClientProvider>
     </>
   );
 }

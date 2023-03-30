@@ -12,6 +12,16 @@ const nextConfig = {
     // See: https://github.com/gregberge/svgr
     svgr: false,
   },
+  compiler: {
+    // Enables the styled-components SWC transform
+    styledComponents: true
+  },
+  images: {
+    domains: [
+      "cdn.komiser.io",
+    ],
+  },
 };
 
 module.exports = withNx(nextConfig);
+// module.exports = nextConfig;
