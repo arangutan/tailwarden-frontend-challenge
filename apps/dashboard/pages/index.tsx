@@ -37,7 +37,7 @@ export function Index() {
   });
 
   useEffect(() => {
-    const id = dataAccounts[0].id;
+    const { id } = dataAccounts[0];
     setSelectedAccount(id);
   }, [dataAccounts]);
 
